@@ -1,7 +1,7 @@
 import React from "react"
 import { Button, Text } from "react-native"
-import { increment, decrement } from "../counterReducer"
-import { useReduxSelector, useReduxDispatch } from "../../store"
+import { increment, decrement } from "../redux/ducks/counter"
+import { useReduxSelector, useReduxDispatch } from "../redux/store"
 
 const Counter = (): React.ReactElement =>{
 const value = useReduxSelector(state => state.counter)

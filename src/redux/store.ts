@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { useDispatch, useSelector, TypedUseSelectorHook } from 'react-redux'
-import rootReducer from './reducers'
+import rootReducer from './ducks/rootReducer'
 
 export type RootState = ReturnType<typeof rootReducer>
 
